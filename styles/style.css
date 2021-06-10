@@ -1,0 +1,185 @@
+body {
+  background-color: #e6eff6;
+  font-size: 16px;
+}
+
+#card {
+  margin: 160px auto;
+  width: 635px;
+  height: 475px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 15px 35px #0000002e;
+          box-shadow: 0px 15px 35px #0000002e;
+}
+
+#card-head {
+  height: 215px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px 7px 0px 0px;
+}
+
+#card-head div {
+  padding: 20px 40px;
+}
+
+#card-head h2 {
+  color: #2ab2af;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+#card-head h3 {
+  color: #c0df34;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+#card-head p {
+  color: #98a6bd;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+#card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e5eff5;
+}
+
+#card-body h3 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+#card-body p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+#card-body-1 {
+  width: 50%;
+  background-color: #2ab2af;
+  height: 260px;
+  border-radius: 0px 0px 0px 7px;
+}
+
+#card-body-1 div {
+  padding: 20px 40px;
+}
+
+#card-body-1 #money {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+#card-body-1 #opacity {
+  color: rgba(229, 239, 245, 0.753);
+}
+
+#card-body-1 #button {
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #c0df34;
+  color: #e5eff5;
+  width: 237px;
+  height: 50px;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0px;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.266);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.266);
+}
+
+#card-body-1 #button:hover {
+  background-color: #4abebd;
+  border: solid 3px #c0df34;
+  color: #c0df34;
+}
+
+#card-body-1 #button:active {
+  background-color: #2ab2af;
+}
+
+#card-body-2 {
+  width: 50%;
+  background-color: #4abebd;
+  height: 260px;
+  border-radius: 0px 0px 7px 0px;
+}
+
+#card-body-2 div {
+  padding: 20px 40px;
+}
+
+#card-body-2 p {
+  color: rgba(229, 239, 245, 0.753);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.attribution {
+  font-family: "Karla", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin: 50px;
+}
+
+.attribution a {
+  color: #2ab2af;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #4abebd;
+}
+
+.attribution a:active {
+  color: #2ab2af;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 840px) {
+  #card {
+    width: 310px;
+    height: 720px;
+  }
+  #card-head {
+    height: auto;
+  }
+  #card-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #card-body #card-body-1 {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+  }
+  #card-body #card-body-2 {
+    width: 100%;
+    border-radius: 0 0 7px 7px;
+    height: auto;
+  }
+  .attribution {
+    margin: 20px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

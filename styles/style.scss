@@ -1,0 +1,167 @@
+$Grayish-Blue: hsl(218, 22%, 67%);
+$Light-Grey: hsl(204, 43%, 93%);
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+$Light-Grey-opacity: hsla(203, 44%, 93%, 0.753);
+$font: 'Karla', sans-serif;
+
+body {
+    background-color: #e6eff6;
+    font-size: 16px;
+}
+
+ 
+#card {
+    margin: 160px auto;
+    width: 635px;
+    height: 475px;
+    border-radius: 8px;
+    box-shadow: 0px 15px 35px #0000002e;
+
+}
+#card-head {
+    height: 215px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 7px 7px 0px 0px ;
+    div {
+        padding: 20px 40px;
+    }
+    h2 {
+        color:$Cyan;
+        font-family: $font;
+        font-weight: 700;
+    }
+    h3 {
+        color: $Bright-Yellow;
+        font-family: $font;
+        font-weight: 700;
+    }
+    p {
+        color: $Grayish-Blue;
+        font-family: $font;
+        font-weight: 400;
+        line-height: 25px;
+
+    }
+}
+#card-body {
+    display: flex;
+    color: $Light-Grey;
+    h3 {
+        font-family: $font;
+        font-weight: 700;
+    }
+    p {
+        font-family: $font;
+        font-weight: 400;
+    }
+}
+#card-body-1 {
+    width: 50%;
+    background-color: $Cyan;
+    height: 260px;
+    border-radius: 0px 0px 0px 7px;
+    
+    div {
+        padding: 20px 40px;
+    }
+    #money {
+        font-size: 33px;
+        font-weight: 700;
+    }
+    #opacity {
+        color: $Light-Grey-opacity;
+    }
+    
+    
+    #button { 
+        text-decoration: none;
+        font-family: $font;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: #c0df34;
+        color:$Light-Grey;
+        width: 237px;
+        height: 50px;
+        border-radius: 5px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 10px 0px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.266);
+        
+        &:hover {
+            background-color: #4abebd;
+            border: solid 3px $Bright-Yellow;
+            color: $Bright-Yellow;
+        }
+        &:active {
+            background-color: $Cyan;
+        }
+    }
+}
+#card-body-2 {
+    width: 50%;
+    background-color: #4abebd;
+    height: 260px;
+    border-radius: 0px 0px 7px 0px;
+    
+    div {
+        padding: 20px 40px;
+    }        
+    p {
+        color: $Light-Grey-opacity;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;   
+    }
+
+
+
+}
+.attribution {
+    font-family: $font;
+    text-align: center;
+    font-weight: 700;
+    margin: 50px;
+    a {
+        color: $Cyan;
+        text-decoration: none;
+        &:hover {
+            color: #4abebd;
+        }
+        &:active {
+            color:$Cyan;
+        }
+    }
+}
+/* MOBILE VERSION */
+@media (max-width: 840px) {
+    
+    #card {
+        width: 310px;
+        height: 720px;
+    }
+    #card-head {
+        height: auto;
+        
+    }
+    #card-body {
+        flex-direction: column;
+        #card-body-1 {
+            width: 100%;
+            border-radius: 0;
+            height: auto;
+        }
+        #card-body-2 {
+            width: 100%;
+            border-radius: 0 0 7px 7px;
+            height: auto;
+        }
+    }
+    .attribution {
+        margin: 20px 0;
+    }
+}
